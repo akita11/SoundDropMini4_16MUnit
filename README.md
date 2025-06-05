@@ -51,7 +51,7 @@
 
 [SoundDropMiniUNIT](https://github.com/akita11/SoundDropMIniUNIT)のページから「SoundDropMini.m5b」をダウンロードし、UIFlow(v1)の"Custom"の"Open *.m5b"からこのファイルを指定すると、Init、Play、Stopの3つのブロックを使用できます。（SoundDropMiniUNITと主な再生関連のコマンドは同一です）
 
-<img src="https://github.com/akita11/SoundDropMini4MUnit/blob/main/SoundDropMini4M_Block.png" width="240px">
+<img src="https://github.com/akita11/SoundDropMini4_16MUnit/blob/main/SoundDropMini_Block.png" width="240px">
 
 - SoundDropMini_Init : 初期化。最初に1回だけ使用します。"TX"と"RX"には、使用するGroveポート・マイコン本体にあわせて、使用するピン番号を指定します。例えば、M5StackBasicのPortA（本体の赤いコネクタ）の場合は、上図のようにTX=21、RX=22を指定します。M5StackCore2のPortAの場合は、TX=32、RX=33となります。
 - SoundDropMini_Play : numに指定した「曲番号」の音声を再生します。
