@@ -1,6 +1,6 @@
 # SoundDropMini4MUnit
 
-<img src="https://github.com/akita11/SoundDropMini4MUnit/blob/main/SoundDropMini4MUnit.jpg" width="240px">
+<img src="https://github.com/akita11/SoundDropMini4_16MUnit/blob/main/SoundDropMini4_16MUnit.jpg" width="240px">
 
 音声再生IC CH7003を使用した音声再生モジュールです。4MB（または16MB）のフラッシュメモリを搭載しており、PCにUSB Type-Cケーブルで接続するとUSBメモリとして認識され、そこにMP3音声データ等をコピーします。その音声データをGrove端子のシリアル(UART)通信で再生制御できます。UIFlow(v1)用のブロックもあります。
 
@@ -9,7 +9,10 @@
 
 ## 使い方（接続方法）
 
-以下のようにスピーカやアンプを接続し、Grove端子からの制御で音声を再生します。
+以下のようにスピーカやアンプを接続し、Grove端子からの制御で音声を再生します。必要に応じて基板裏面の半田ジャンパをショート・カットしてください。
+
+<img src="https://github.com/akita11/SoundDropMini4_16MUnit/blob/main/SoundDropMini4_16MUnit_back.jpg" width="240px">
+
 
 ### アンプ付きスピーカに接続する場合
 
@@ -19,7 +22,7 @@
 
 ### スピーカを直接接続する場合
 
-<img src="https://github.com/akita11/SoundDropMini4MUnit/blob/main/SoundDropMini4MUnit_spk.jpg" width="240px">
+<img src="https://github.com/akita11/SoundDropMini4MUnit/blob/main/SoundDropMini4_16MUnit_spk.jpg" width="240px">
 
 基板上部にある1.25mmピッチコネクタ(Molex 53047-0210用)をとりつける端子があり、市販の小型スピーカ（M5Stack本体に使われているものなど。AliExpressやTaobaoでも同等品があります）を接続することができます。※隙間がせまく差し込みにくいので注意してください。
 またJP1を開放（初期状態）します。
@@ -28,8 +31,6 @@
 ### 3.5mmジャックに直接スピーカを接続する方法
 
 3.5mmジャックに直接スピーカを接続することもできます。その場合は、基板裏面のハンダジャンパを以下のように修正してください。（スピーカはモノラル再生となります）
-
-<img src="https://github.com/akita11/SoundDropMini4MUnit/blob/main/SoundDropMini4MUnit_back.jpg" width="240px">
 
 - JP2をカット
 - JP3・JP4の中央と△マーク側をカットし、中央と反対側（△マークがない側）をショート
